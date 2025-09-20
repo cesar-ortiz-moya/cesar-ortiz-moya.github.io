@@ -13,6 +13,7 @@
         padding: 0;
         color: #222;
         background-color: #fdfdfd;
+        scroll-behavior: smooth;
     }
     header {
         text-align: center;
@@ -56,11 +57,15 @@
         margin-bottom: 15px;
         color: #004466;
     }
-    h3 {
+    h3, h4 {
         font-family: 'Merriweather', serif;
         color: #006699;
         margin-top: 20px;
         margin-bottom: 10px;
+    }
+    h4 {
+        color: #004466;
+        margin-top: 0;
     }
     p {
         margin-bottom: 15px;
@@ -80,9 +85,79 @@
     ul {
         margin-left: 20px;
     }
+
+    /* Working Papers Section */
+    .papers-section {
+        margin-top: 20px;
+    }
+    .paper {
+        border-left: 4px solid #006699;
+        padding: 15px 20px;
+        margin-bottom: 25px;
+        background-color: #f9fbfd;
+        border-radius: 6px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    }
+    .paper .abstract {
+        font-style: italic;
+        margin: 10px 0;
+        line-height: 1.5;
+    }
+    .paper .keywords, .paper .jel {
+        font-size: 0.88em;
+        color: #333;
+        margin-top: 5px;
+    }
+    .paper .keywords strong, .paper .jel strong {
+        color: #006699;
+    }
+
+    /* Sticky Navigation */
+    #navbar {
+        position: sticky;
+        top: 0;
+        background-color: #004466;
+        z-index: 1000;
+        padding: 10px 0;
+    }
+    #navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #navbar ul li {
+        margin: 0 15px;
+    }
+    #navbar ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 5px 10px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    #navbar ul li a:hover {
+        background-color: #ffd700;
+        color: #004466;
+        border-radius: 5px;
+    }
 </style>
 </head>
 <body>
+
+<nav id="navbar">
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#research-interests">Research Interests</a></li>
+        <li><a href="#teaching-philosophy">Teaching Philosophy</a></li>
+        <li><a href="#presentations">Presentations</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
 <header>
     <img src="images/240228_Cesar_OrtizMoya_744_s.jpg" alt="Cesar Ortiz Moya">
@@ -107,15 +182,23 @@
     </p>
 
     <h3>Other Papers in Preparation</h3>
-    <p><strong>Orbital Pollution and Optimal Active Debris Removal Policies under Technological and ASAT Shocks</strong><br>
-    Authors: Bongers, Aneli; Ortiz, Cesar; Torres, Jose Luis<br>
-    Working paper, University of Málaga, Spain.<br>
-    </p>
+    <section id="working-papers" class="papers-section">
 
-    <p><strong>Complementarity in Orbit: The Macroeconomic Role of Space Infrastructure</strong><br>
-    Authors: Bongers, Aneli; Ortiz, Cesar<br>
-    Working paper, University of Málaga, Spain.<br>
-    </p>
+        <article class="paper">
+          <h4>Bongers, A., Ortiz, C. & Torres, J. (2025). Orbital Pollution and Optimal Active Debris Removal Policies under Technological and ASAT Shocks</h4>
+          <p class="abstract"><em>Abstract:</em> This paper studies optimal Active Debris Removal (ADR) policies as an ex-post abatement policy to tackle the detrimental impact of space debris on social welfare. The paper presents a dynamic stochastic general equilibrium (DSGE) model that incorporates both Earth and outer space. Within a competitive decentralized economy, households and firms merely adjust their behavior in response to the harm caused by space debris. However, a centralized economy may choose to invest in de-pollution measures to optimize social welfare. The model considers an ex-post abatement policy involving the removal of space debris to mitigate its negative consequences for the fast-growing satellite industry. The analysis also explores a decentralized economy featuring an international space authority, which maximizes social welfare by charging Pigouvian taxes to finance de-pollution strategies. We analyze ADR policies under three types of shocks: a total factor productivity shock, an investment-specific technological shock to satellites, and an anti-satellite military shock.</p>
+          <p class="keywords"><strong>Keywords:</strong> Outer space; Orbital debris; Satellites; Abatement cost; Active Debris Removal policies</p>
+          <p class="jel"><strong>JEL Classification:</strong> D62; E22; H23; Q53; Q58</p>
+        </article>
+
+        <article class="paper">
+          <h4>Bongers, A., & Ortiz, C. (2025). Complementarity in Orbit: The Macroeconomic Role of Space Infrastructure</h4>
+          <p class="abstract"><em>Abstract:</em> This paper presents a theoretical framework for analyzing the complementarity between Earth-based capital and orbital capital in global production. Although satellites have become essential for a wide range of terrestrial systems, including logistics, energy, communications, and agriculture, existing macroeconomic models rarely treat them as explicit productive input. Building on the Dynamic Integrated Space Economy (DISE) model, we develop a dual-capital neoclassical growth framework that distinguishes between terrestrial and orbital capital. By modelling these capital stocks as technologically complementary, we introduce a novel approach to assess how orbital infrastructure contributes to long-run economic growth on Earth. The joint production function considers the mutual dependence between satellites and Earth-based systems, while a debris dynamics component captures the gradual decline in orbital capital productivity due to rising congestion and collision risk. By formally incorporating space infrastructure into growth theory, this paper provides the first analytical basis for understanding how orbital assets shape long-term output through their interaction with terrestrial capital. The model offers a theoretical foundation for future empirical research and advances the conceptual development of space-economic analysis.</p>
+          <p class="keywords"><strong>Keywords:</strong> Outer space; Capital Complementarity; Capital; Satellites; Integrated Assessment Model</p>
+          <p class="jel"><strong>JEL Classification:</strong> D62; E22; H23; Q53; Q58</p>
+        </article>
+
+    </section>
 
     <h3>Curriculum Vitae</h3>
     <p>Click below to view my updated CV (PDF):</p>
