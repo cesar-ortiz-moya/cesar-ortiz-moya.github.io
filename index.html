@@ -1,269 +1,881 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cesar Ortiz Moya | Job Market Candidate 2025–2026</title>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+<title>César Ortiz-Moya | Economist | Academic Job Market 2026–27</title>
+
+<meta name="description" content="César Ortiz-Moya is a Visiting Assistant Professor of Economics at Southern Illinois University Edwardsville. Research in macroeconomics, environmental economics, and space economics.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
 <style>
-    body {
-        font-family: 'Lato', sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        color: #222;
-        background-color: #fdfdfd;
-        scroll-behavior: smooth;
+
+:root {
+    --navy: #102a3a;
+    --navy-light: #193c4d;
+    --mint: #d4f3e5;
+    --green: #28745c;
+    --white: #ffffff;
+    --background: #f5f8f7;
+    --text: #243b46;
+    --muted: #637680;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--text);
+    background: var(--background);
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.25;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(1120px, 90%);
+    margin: auto;
+}
+
+/* NAVIGATION */
+
+nav {
+    background: var(--navy);
+    color: white;
+    padding: 22px 0;
+    border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+.nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 19px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    font-size: 14px;
+    color: #d8e5e7;
+}
+
+.nav-links a:hover {
+    color: var(--mint);
+}
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(125deg, #102a3a, #1b4353);
+    color: white;
+    padding: 85px 0 95px;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    gap: 65px;
+    align-items: center;
+}
+
+.eyebrow {
+    color: var(--mint);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 5vw, 66px);
+    margin: 0 0 20px;
+    letter-spacing: -2px;
+}
+
+.hero-position {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.hero-university {
+    color: #c3d5da;
+    margin-bottom: 28px;
+}
+
+.hero-description {
+    font-size: 17px;
+    color: #e0eaed;
+    max-width: 580px;
+    margin-bottom: 32px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 21px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: .2s;
+}
+
+.btn-primary {
+    background: var(--mint);
+    color: var(--navy);
+}
+
+.btn-primary:hover {
+    background: white;
+}
+
+.btn-outline {
+    border: 1px solid #a4bbc3;
+    color: white;
+}
+
+.btn-outline:hover {
+    background: rgba(255,255,255,.1);
+}
+
+/* PROFILE PHOTO */
+
+.profile-container {
+    max-width: 370px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.profile-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,.18);
+    box-shadow: 0 22px 55px rgba(0,0,0,.2);
+}
+
+.profile-caption {
+    margin-top: 16px;
+    font-size: 13px;
+    color: #c4d5d9;
+    text-align: center;
+}
+
+/* GENERAL SECTIONS */
+
+section {
+    padding: 85px 0;
+}
+
+.section-label {
+    color: var(--green);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.section-title {
+    font-size: clamp(30px, 3.5vw, 40px);
+    margin: 0 0 28px;
+    color: var(--navy);
+}
+
+.section-intro {
+    max-width: 780px;
+    color: var(--muted);
+    margin-bottom: 35px;
+}
+
+.about {
+    background: white;
+}
+
+.about p {
+    max-width: 850px;
+}
+
+.about a,
+.research a,
+.contact a {
+    color: var(--green);
+    font-weight: 600;
+}
+
+.about a:hover,
+.research a:hover,
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* RESEARCH */
+
+.research {
+    background: var(--background);
+}
+
+.research-card {
+    background: white;
+    border: 1px solid #e1e9e8;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.paper-status {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: 12px;
+}
+
+.research-card h3 {
+    font-size: 21px;
+    margin: 0 0 12px;
+    color: var(--navy);
+}
+
+.paper-authors {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.paper-links {
+    margin-top: 18px;
+}
+
+/* TEACHING */
+
+.teaching {
+    background: white;
+}
+
+.teaching-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    align-items: center;
+}
+
+.course-poster {
+    width: 100%;
+    max-width: 430px;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(0,0,0,.12);
+}
+
+.course-badge {
+    display: inline-block;
+    background: var(--mint);
+    color: var(--navy);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.course-list {
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: 1px solid #e0e8e7;
+}
+
+/* ACTIVITIES */
+
+.activities {
+    background: var(--background);
+}
+
+.activity-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #dce5e3;
+}
+
+.activity-item strong {
+    color: var(--navy);
+}
+
+/* CONTACT */
+
+.contact {
+    background: var(--navy);
+    color: white;
+}
+
+.contact .section-title {
+    color: white;
+}
+
+.contact .section-label {
+    color: var(--mint);
+}
+
+.contact a {
+    color: var(--mint);
+}
+
+footer {
+    background: #0a1c28;
+    color: #a8bdc4;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .nav-inner {
+        flex-direction: column;
+        align-items: flex-start;
     }
-    header {
-        text-align: center;
-        padding: 40px 20px 20px 20px;
-        background-color: #e8f0f8;
+
+    .nav-links {
+        gap: 15px;
     }
-    header img {
-        width: 150px;
-        height: auto;
-        border-radius: 50%;
-        margin-bottom: 15px;
+
+    .hero {
+        padding: 55px 0;
     }
-    header h1 {
-        font-family: 'Merriweather', serif;
-        font-size: 2.2em;
-        margin: 10px 0;
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
     }
-    header p {
-        font-size: 1em;
-        margin: 5px 0;
+
+    .profile-container {
+        max-width: 300px;
     }
-    .badge-jobmarket {
-        background-color:#FFD700; 
-        color:#004466; 
-        display:inline-block; 
-        padding:5px 15px; 
-        border-radius:5px; 
-        font-weight:bold;
-        margin-top:10px;
+
+    .teaching-grid {
+        grid-template-columns: 1fr;
     }
+
     section {
-        max-width: 900px;
-        margin: 30px auto;
-        padding: 0 20px;
-    }
-    h2 {
-        font-family: 'Merriweather', serif;
-        font-size: 1.8em;
-        border-bottom: 2px solid #004466;
-        padding-bottom: 5px;
-        margin-bottom: 15px;
-        color: #004466;
-    }
-    h3, h4 {
-        font-family: 'Merriweather', serif;
-        color: #006699;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-    h4 {
-        color: #004466;
-        margin-top: 0;
-    }
-    p {
-        margin-bottom: 15px;
-    }
-    .button {
-        background-color: #006699;
-        color: #fff;
-        padding: 8px 15px;
-        text-decoration: none;
-        border-radius: 5px;
-        display: inline-block;
-        margin-top: 10px;
-    }
-    .button:hover {
-        background-color: #004466;
-    }
-    ul {
-        margin-left: 20px;
+        padding: 60px 0;
     }
 
-    /* Working Papers Section */
-    .papers-section {
-        margin-top: 20px;
-    }
-    .paper {
-        border-left: 4px solid #006699;
-        padding: 15px 20px;
-        margin-bottom: 25px;
-        background-color: #f9fbfd;
-        border-radius: 6px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.08);
-    }
-    .paper .abstract {
-        font-style: italic;
-        margin: 10px 0;
-        line-height: 1.5;
-    }
-    .paper .keywords, .paper .jel {
-        font-size: 0.88em;
-        color: #333;
-        margin-top: 5px;
-    }
-    .paper .keywords strong, .paper .jel strong {
-        color: #006699;
-    }
+}
 
-    /* Sticky Navigation */
-    #navbar {
-        position: sticky;
-        top: 0;
-        background-color: #004466;
-        z-index: 1000;
-        padding: 10px 0;
-    }
-    #navbar ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    #navbar ul li {
-        margin: 0 15px;
-    }
-    #navbar ul li a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 5px 10px;
-        transition: background-color 0.3s, color 0.3s;
-    }
-    #navbar ul li a:hover {
-        background-color: #ffd700;
-        color: #004466;
-        border-radius: 5px;
-    }
 </style>
 </head>
+
 <body>
 
-<nav id="navbar">
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#teaching">Teaching</a></li>
-        <li><a href="#research-interests">Research Interests</a></li>
-        <li><a href="#teaching-philosophy">Teaching Philosophy</a></li>
-        <li><a href="#presentations">Presentations</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+<!-- NAVIGATION -->
+
+<nav>
+<div class="container nav-inner">
+
+<a href="#" class="logo">CÉSAR ORTIZ-MOYA</a>
+
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#research">Research</a>
+<a href="#teaching">Teaching</a>
+<a href="#activities">Academic Activities</a>
+<a href="CV_Ortiz2026.pdf" target="_blank">CV</a>
+<a href="#contact">Contact</a>
+</div>
+
+</div>
 </nav>
 
-<header>
-    <img src="images/240228_Cesar_OrtizMoya_744_s.jpg" alt="Cesar Ortiz Moya">
-    <h1>PhD Candidate in Economics – University of Málaga, Spain</h1>
-    <p>Specializing in Space Economics, Orbital Debris, Resource and Environmental Economics</p>
-    <div class="badge-jobmarket">Job Market Candidate 2025–2026</div>
+<!-- HERO -->
+
+<header class="hero">
+
+<div class="container hero-grid">
+
+<div>
+
+<div class="eyebrow">
+Academic Job Market 2026–27
+</div>
+
+<h1>César Ortiz-Moya</h1>
+
+<div class="hero-position">
+Visiting Assistant Professor of Economics
+</div>
+
+<div class="hero-university">
+Southern Illinois University Edwardsville
+</div>
+
+<p class="hero-description">
+I am an economist working at the intersection of
+macroeconomics, environmental economics, and space
+economics. My research examines the economic role of
+space infrastructure, orbital debris accumulation,
+and policies for sustainable economic growth.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#research" class="btn btn-primary">
+Explore my research ↗
+</a>
+
+<a href="CV_Ortiz2026.pdf"
+class="btn btn-outline"
+target="_blank">
+Download CV ↓
+</a>
+
+<a href="#contact" class="btn btn-outline">
+Get in touch ↗
+</a>
+
+</div>
+
+</div>
+
+<div class="profile-container">
+
+<img
+src="images/240228_Cesar_OrtizMoya_744_s.jpg"
+alt="Portrait of César Ortiz-Moya"
+class="profile-photo"
+>
+
+<div class="profile-caption">
+PhD Candidate in Economics · University of Málaga
+<br>
+Expected December 2026
+</div>
+
+</div>
+
+</div>
+
 </header>
 
-<section id="about">
-    <h2>About</h2>
-    <p>I am a PhD Candidate in Economics at the University of Málaga, Spain, specializing in space economics, orbital debris, and energy and resource economics. My work integrates macroeconomic modeling with sustainability challenges, addressing both terrestrial and orbital systems.</p>
-    
-    <p>Recent research experience includes:</p>
-    <ul>
-        <li>Visiting Research Fellow, University of Colorado Boulder (April–June 2025), collaborating with Professor Daniel Kaffine on space-economy modeling.</li>
-        <li>Development of integrated assessment models for orbital debris mitigation policies.</li>
-    </ul>
+<!-- ABOUT -->
 
-    <p>My research focuses on:</p>
-    <ul>
-        <li>Understanding how orbital and Earth-based capital complement each other in production and growth.</li>
-        <li>Analyzing the economic and environmental impacts of satellite operations and orbital debris accumulation.</li>
-        <li>Designing policy tools, including active debris removal strategies and Pigouvian incentives.</li>
-    </ul>
+<section id="about" class="about">
 
-    <p>I aim to provide insights for sustainable resource management on Earth and in outer space, combining rigorous quantitative modeling with practical policy relevance.</p>
+<div class="container">
+
+<div class="section-label">About me</div>
+
+<h2 class="section-title">
+Academic Background
+</h2>
+
+<p>
+I am a Visiting Assistant Professor of Economics
+at Southern Illinois University Edwardsville (SIUE)
+and a PhD Candidate in Economics at the
+University of Málaga, Spain.
+</p>
+
+<p>
+My dissertation,
+<em>
+The Economics of Space Debris: Mitigation Policies,
+Abatement Costs, and Economic Impact
+</em>,
+is supervised by Professor
+<a href="https://theeconomics.uma.es/en/aneli-bongers-chicano__en/"
+target="_blank" rel="noopener noreferrer">
+Anelí Bongers
+</a>,
+with Professor
+<a href="https://www.uma.es/departments/teachers/a244Q055RkE3TkJqTitNNCtEcGxsUT09/facultad-de-ciencias-economicas-y-empresariales/"
+target="_blank" rel="noopener noreferrer">
+José Luis Torres
+</a>
+serving as my doctoral tutor.
+</p>
+
+<p>
+In 2025, I was a Visiting Research Fellow
+at the University of Colorado Boulder,
+hosted by Professor
+<a href="https://www.colorado.edu/faculty/kaffine/"
+target="_blank" rel="noopener noreferrer">
+Daniel Kaffine
+</a>.
+</p>
+
+<p>
+My research combines dynamic macroeconomic modelling,
+environmental economics, and quantitative policy
+analysis to investigate the economic implications
+of orbital infrastructure and space debris.
+</p>
+
+</div>
+
 </section>
 
-<section id="research">
-    <h2>Research</h2>
+<!-- RESEARCH -->
 
-    <h3>Job Market Paper</h3>
-    <p><strong>DISE: A Dynamic Integrated Space-Economy Model for Orbital Debris Mitigation Policy Evaluation</strong><br>
-    Authors: Bongers, Aneli; Ortiz, Cesar; Torres, Jose Luis<br>
-    Published in: <em>Environmental and Resource Economics</em> (2025)<br>
-    <a class="button" href="https://doi.org/10.1007/s10640-025-01003-y" target="_blank">Read Paper</a>
-    </p>
+<section id="research" class="research">
 
-    <h3>Other Papers in Preparation</h3>
-    <section id="working-papers" class="papers-section">
+<div class="container">
 
-        <article class="paper">
-          <h4>Bongers, A., Ortiz, C. & Torres, J. (2025). Orbital Pollution and Optimal Active Debris Removal Policies under Technological and ASAT Shocks</h4>
-          <p class="abstract"><em>Abstract:</em> This paper studies optimal Active Debris Removal (ADR) policies as an ex-post abatement policy to tackle the detrimental impact of space debris on social welfare. The paper presents a dynamic stochastic general equilibrium (DSGE) model that incorporates both Earth and outer space. Within a competitive decentralized economy, households and firms merely adjust their behavior in response to the harm caused by space debris. However, a centralized economy may choose to invest in de-pollution measures to optimize social welfare. The model considers an ex-post abatement policy involving the removal of space debris to mitigate its negative consequences for the fast-growing satellite industry. The analysis also explores a decentralized economy featuring an international space authority, which maximizes social welfare by charging Pigouvian taxes to finance de-pollution strategies. We analyze ADR policies under three types of shocks: a total factor productivity shock, an investment-specific technological shock to satellites, and an anti-satellite military shock.</p>
-          <p class="keywords"><strong>Keywords:</strong> Outer space; Orbital debris; Satellites; Abatement cost; Active Debris Removal policies</p>
-          <p class="jel"><strong>JEL Classification:</strong> D62; E22; H23; Q53; Q58</p>
-        </article>
+<div class="section-label">Research</div>
 
-        <article class="paper">
-          <h4>Bongers, A., & Ortiz, C. (2025). Complementarity in Orbit: The Macroeconomic Role of Space Infrastructure</h4>
-          <p class="abstract"><em>Abstract:</em> This paper presents a theoretical framework for analyzing the complementarity between Earth-based capital and orbital capital in global production. Although satellites have become essential for a wide range of terrestrial systems, including logistics, energy, communications, and agriculture, existing macroeconomic models rarely treat them as explicit productive input. Building on the Dynamic Integrated Space Economy (DISE) model, we develop a dual-capital neoclassical growth framework that distinguishes between terrestrial and orbital capital. By modelling these capital stocks as technologically complementary, we introduce a novel approach to assess how orbital infrastructure contributes to long-run economic growth on Earth. The joint production function considers the mutual dependence between satellites and Earth-based systems, while a debris dynamics component captures the gradual decline in orbital capital productivity due to rising congestion and collision risk. By formally incorporating space infrastructure into growth theory, this paper provides the first analytical basis for understanding how orbital assets shape long-term output through their interaction with terrestrial capital. The model offers a theoretical foundation for future empirical research and advances the conceptual development of space-economic analysis.</p>
-          <p class="keywords"><strong>Keywords:</strong> Outer space; Capital Complementarity; Capital; Satellites; Integrated Assessment Model</p>
-          <p class="jel"><strong>JEL Classification:</strong> D62; E22; H23; Q53; Q58</p>
-        </article>
+<h2 class="section-title">
+Publications & Working Papers
+</h2>
 
-    </section>
+<p class="section-intro">
+My research investigates the relationship between
+economic growth, space infrastructure, and orbital
+environmental sustainability.
+</p>
 
-    <h3>Curriculum Vitae</h3>
-    <p>Click below to view my updated CV (PDF):</p>
-    <a class="button" href="Cesar_Ortiz_CV_2025_updated.pdf" target="_blank">Download CV (PDF)</a>
+<div class="research-card">
+
+<div class="paper-status">
+Peer-reviewed publication · 2025
+</div>
+
+<h3>
+DISE: A Dynamic Integrated Space–Economy Model
+for Orbital Debris Mitigation Policy Evaluation
+</h3>
+
+<div class="paper-authors">
+Anelí Bongers, César Ortiz, and José Luis Torres
+</div>
+
+<p>
+<em>Environmental and Resource Economics.</em>
+</p>
+
+<p>
+A dynamic integrated assessment framework for
+evaluating orbital debris mitigation policies
+and their economic implications.
+</p>
+
+<div class="paper-links">
+
+<a href="https://doi.org/10.1007/s10640-025-01003-y"
+target="_blank" rel="noopener noreferrer">
+Read published article ↗
+</a>
+
+</div>
+
+</div>
+
+<div class="research-card">
+
+<div class="paper-status">
+Working paper
+</div>
+
+<h3>
+Complementarity in Orbit:
+The Macroeconomic Role of Space Infrastructure
+</h3>
+
+<div class="paper-authors">
+Anelí Bongers and César Ortiz
+</div>
+
+<p>
+A dual-capital growth framework examining
+complementarity between terrestrial and orbital
+capital, satellite investment, and orbital
+debris accumulation.
+</p>
+
+</div>
+
+<div class="research-card">
+
+<div class="paper-status">
+Working paper
+</div>
+
+<h3>
+Orbital Pollution and Optimal Active Debris
+Removal Policies under Technological and ASAT Shocks
+</h3>
+
+<div class="paper-authors">
+Anelí Bongers, César Ortiz, and José Luis Torres
+</div>
+
+<p>
+A dynamic stochastic general equilibrium framework
+for studying optimal active debris removal,
+technological shocks, and orbital environmental policy.
+</p>
+
+</div>
+
+</div>
+
 </section>
 
-<section id="teaching">
-    <h2>Teaching</h2>
-    <p>I have taught Microeconomics, Macroeconomics, Principles of Economics, Business Statistics, and Managerial Economics across multiple institutions (2011–2025). My courses incorporate simulation games and virtual reality equipment to enhance student engagement and learning outcomes.</p>
-    <ul>
-        <li>Thompson Rivers University (2017–2025): Microeconomics, Macroeconomics, Principles of Economics, Business Statistics, Managerial Economics, simulations & VR</li>
-        <li>Selkirk College (2021–2023): Microeconomics, Macroeconomics, Principles of Economics, online course “Tourism and the Canadian Economy”</li>
-        <li>NVIT (2019–2020): Macroeconomics, Principles of Marketing</li>
-        <li>Yorkville University (2017–2019): Microeconomics, Macroeconomics</li>
-        <li>UAE University (2011–2014): Microeconomics, Macroeconomics, Principles of Economics</li>
-        <li>Vancouver Island University (2008–2010): Urban Economics, Sport Economics, Economics for Tourism, Microeconomics, Business Stats</li>
-        <li>Universidad de Castilla La Mancha (2003–2005): Economics Statistics, Quality Control, Data Analysis</li>
-    </ul>
+<!-- TEACHING -->
+
+<section id="teaching" class="teaching">
+
+<div class="container">
+
+<div class="section-label">
+Teaching
+</div>
+
+<h2 class="section-title">
+Teaching & Course Development
+</h2>
+
+<p class="section-intro">
+My teaching experience spans undergraduate and
+graduate economics and business programs in
+North America, Europe, Asia, and the Middle East.
+</p>
+
+<div class="teaching-grid">
+
+<div>
+
+<div class="course-badge">
+Featured Course · Spring 2027
+</div>
+
+<h3>
+ECON 341 — Environmental Economics
+</h3>
+
+<p>
+<strong>
+Economics for a More Sustainable Tomorrow
+</strong>
+</p>
+
+<p>
+This course explores how economic tools can help
+us understand, protect, and value our natural
+environment.
+</p>
+
+<p>
+Topics include climate and environmental policy,
+natural resource economics, sustainability,
+and the emerging field of space economics.
+</p>
+
+<p>
+Southern Illinois University Edwardsville
+</p>
+
+</div>
+
+<div>
+
+<img
+src="Poster Econ 341.png"
+alt="ECON 341 Environmental Economics course poster"
+class="course-poster"
+loading="lazy"
+>
+
+</div>
+
+</div>
+
+<div class="course-list">
+
+<h3>Current Teaching at SIUE</h3>
+
+<p>
+<strong>Fall 2026:</strong>
+Principles of Macroeconomics (ECON 111);
+Statistical Analysis for Business Decisions (MS 251).
+</p>
+
+<p>
+<strong>Spring 2027:</strong>
+Environmental Economics (ECON 341).
+</p>
+
+<h3>Previous Teaching Experience</h3>
+
+<p>
+Thompson Rivers University, Canada (2017–2025):
+Microeconomics, Macroeconomics, Managerial Economics,
+Statistics, Quantitative Methods, Econometrics,
+and International Economics.
+</p>
+
+<p>
+Additional teaching appointments include
+Universidad Internacional de La Rioja,
+Tianjin University of Technology,
+Shanghai Institute of Technology,
+and other international institutions.
+</p>
+
+</div>
+
+</div>
+
 </section>
 
-<section id="research-interests">
-    <h2>Research Interests</h2>
-    <p>My research combines environmental, resource, and energy economics with the emerging space economy. I study how technological change and resource constraints affect economic growth and policy design, using tools such as DSGE and Integrated Assessment Models.</p>
-    <p>Current projects include studying optimal orbital debris removal policies, complementarity between orbital and terrestrial capital, and the environmental and economic impacts of satellite re-entry emissions. My aim is to inform policy for sustainable resource management on Earth and in space.</p>
+<!-- ACADEMIC ACTIVITIES -->
+
+<section id="activities" class="activities">
+
+<div class="container">
+
+<div class="section-label">
+Academic Activities
+</div>
+
+<h2 class="section-title">
+Selected Presentations & Appointments
+</h2>
+
+<div class="activity-item">
+<strong>2026 — Canadian Economics Association</strong>
+<br>
+Annual Conference, Vancouver, Canada.
+</div>
+
+<div class="activity-item">
+<strong>2026 — Tianjin University of Technology</strong>
+<br>
+Visiting Teaching Faculty, Business Forecasting.
+</div>
+
+<div class="activity-item">
+<strong>2025 — University of Colorado Boulder</strong>
+<br>
+Visiting Research Fellow.
+</div>
+
+<div class="activity-item">
+<strong>2025 — Front Range Energy and Environmental Economics Camp</strong>
+<br>
+Research presentation, University of Colorado Boulder.
+</div>
+
+<div class="activity-item">
+<strong>2025 — Canadian Economics Association</strong>
+<br>
+Annual Conference, Montreal, Canada.
+</div>
+
+</div>
+
 </section>
 
-<section id="teaching-philosophy">
-    <h2>Teaching Philosophy</h2>
-    <p>I focus on student-centered learning, integrating interactive simulations and virtual reality to enhance understanding of complex economic concepts. I aim to develop critical thinking, problem-solving, and practical application skills in my students, preparing them for academic and professional success.</p>
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+<div class="container">
+
+<div class="section-label">
+Contact
+</div>
+
+<h2 class="section-title">
+Get in Touch
+</h2>
+
+<p>
+César Ortiz-Moya
+<br>
+Visiting Assistant Professor of Economics
+<br>
+Department of Economics and Finance
+<br>
+Southern Illinois University Edwardsville
+</p>
+
+<p>
+Email:
+<a href="mailto:cortizm@siue.edu">
+cortizm@siue.edu
+</a>
+</p>
+
+<p>
+<a href="CV_Ortiz2026.pdf" target="_blank">
+Download Curriculum Vitae ↗
+</a>
+</p>
+
+<p>
+<a href="https://orcid.org/0009-0004-9456-0128"
+target="_blank" rel="noopener noreferrer">
+ORCID Profile ↗
+</a>
+</p>
+
+</div>
+
 </section>
 
-<section id="presentations">
-    <h2>Recent Presentations</h2>
-    <ul>
-        <li>“Enhancing Economics Education through Business Simulation Games,” Gaglardi Teaching Seminar, March 2025</li>
-        <li>“DISE: A Dynamic Integrated Space-Economy Model for Orbital Debris Mitigation Policy Evaluation,” Canadian Economics Association Conference, May 30, 2025, Montreal (UQAM)</li>
-        <li>“Orbital Pollution and Optimal Active Debris Removal Policies,” 14th Annual Front Range Energy and Environmental Economics Camp, University of Colorado Boulder, May 16, 2025</li>
-    </ul>
-    <p><a class="button" href="https://www.tiktok.com/@user9732701758176/video/7496577668385770758" target="_blank">Watch Video on Orbital Debris</a></p>
-</section>
+<footer>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:cortizmoya@uma.es">cortizmoya@uma.es</a></p>
-    <p>Links: 
-        <a href="https://scholar.google.com/citations?user=Y3O10m0AAAAJ&hl=es&citsig=ACUpqDcQnbohkwPDiit36IIyffzG" target="_blank">Google Scholar</a> | 
-        <a href="https://www.researchgate.net/profile/Cesar-Ortiz-45?ev=hdr_xprf" target="_blank">ResearchGate</a> | 
-        <a href="https://orcid.org/0009-0004-9456-0128" target="_blank">ORCID</a>
-    </p>
-</section>
+<div class="container">
+
+© 2026 César Ortiz-Moya · Academic Website
+
+</div>
+
+</footer>
 
 </body>
 </html>
